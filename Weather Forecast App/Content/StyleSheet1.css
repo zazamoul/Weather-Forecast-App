@@ -1,0 +1,38 @@
+﻿.demo-card-wide.mdl-card {
+    width: 512px;
+}
+
+.demo-card-wide > .mdl-card__title {
+    color: #fff;
+    height: 176px;
+    background-color : cornflowerblue;
+    // background: url('https://getmdl.io/assets/demos/welcome_card.jpg') center / cover;
+}
+
+.demo-card-wide > .mdl-card__menu {
+    color: #fff;
+}
+
+body {
+    padding: 20px;
+    background: #fafafa;
+    position: relative;
+}
+
+img.superpose {
+    position: absolute;
+    top: 20px;
+    left: 200px;
+}
+
+#img_1 {
+    z-index: 10;
+}
+
+#img_2 {
+    z-index: 11;
+}
+
+#img_3 {
+    z-index: 12;
+}
