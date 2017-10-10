@@ -1,6 +1,4 @@
-﻿var HeuresdePrev = [];
-var TableaudesPrev = [01, 04, 07, 10, 13, 16, 19, 22];
-var Location = [48.85341, 2.3488]; // default Paris
+﻿var Location = [48.85341, 2.3488]; // default Paris
 var LeLieu = "";
 var IconeURL = "";
 var MeteoTitre = "";
