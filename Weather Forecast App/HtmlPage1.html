@@ -15,10 +15,10 @@
     <div class="demo-card-wide mdl-card mdl-shadow--2dp">
 
         <div class="mdl-card__title">
-            <h2 id="LaDate" class="mdl-card__title-text">Welcome</h2>
-            <img id="img_1" class="superpose" src="img/Soleil.png" width="256" alt="..." />
-            <img id="img_2" class="superpose" src="img/Nuage gris.png" width="256" alt="..." />
-            <img id="img_3" class="superpose" src="img/Nuage bleu.png" width="256" alt="..." />
+            <img id="Icone" class="material-icons" src="" width="128" alt=" " align="right" />
+
+            <h2 class="mdl-card__title-text"><span id="LeLieu">Today</span>,&nbsp;<span id="LaDate">Somewhere</span></h2>
+            
         </div>
 
 
@@ -26,8 +26,9 @@
         <!-- Wide card with share menu button -->
 
         <div class="mdl-card__supporting-text">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. <br/>
-            Mauris sagittis pellentesque lacus eleifend lacinia...            
+            
+            <p class="h1" id="short">Short</p><br/>
+            <p class="lead" id="long">Longer description of whats the weather looks like</p>            
             <!-- Icon List -->
             <style>
                 .demo-list-icon {
@@ -41,32 +42,30 @@
             <ul class="demo-list-icon mdl-list">
                 <li class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">person</i>
-                        Bryan Cranston
+                        <i class="material-icons mdl-list__item-icon">linear_scale</i>
+                        <span id="temperature">Temperature °C</span>
                     </span>
                 </li>
                 <li class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">person</i>
-                        Aaron Paul
+                        <i class="material-icons mdl-list__item-icon">network_check</i>
+                        <span id="pressure">Pressure</span>
                     </span>
                 </li>
                 <li class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                        <i class="material-icons mdl-list__item-icon">person</i>
-                        Bob Odenkirk
+                        <i class="material-icons mdl-list__item-icon">grain</i>
+                        <span id="humidity">Humidity</span>
                     </span>
                 </li>
                 <li class="mdl-list__item">
                     <span class="mdl-list__item-primary-content">
-                        <i class="material-icons  mdl-list__item-avatar">person</i>
-                        Bob Odenkirk
-                    </span>
+                        Switch between °C and °F</span>
                     <span class="mdl-list__item-secondary-action">
-                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="list-switch-1">
-                            <input type="checkbox" id="list-switch-1" class="mdl-switch__input" checked />
+                        <label class="mdl-switch mdl-js-switch mdl-js-ripple-effect" for="unitchanger">
+                            <input type="checkbox" id="unitchanger" class="mdl-switch__input" unchecked>
                         </label>
-                    </span>
+                    </span>  
                 </li>
             </ul>
 
@@ -75,17 +74,17 @@
         <div class="mdl-card__actions mdl-card--border">
 
             <!-- Flat button with ripple -->
-            <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="http://www.infoclimat.fr/api-previsions-meteo.html?id=2988507&cntry=FR" data-upgraded=",MaterialButton" target="_blank">
-                DATA THANKS TO INFOCLIMAT.FR
+            <a class="android-link mdl-button mdl-js-button mdl-typography--text-uppercase" href="https://fcc-weather-api.glitch.me/" data-upgraded=",MaterialButton" target="_blank">
+                DATA THANKS TO WEATHER API
                 <i class="material-icons">chevron_right</i>
             </a>
         </div>
 
-        <div class="mdl-card__menu">
+        <!--<div class="mdl-card__menu">
             <button class="mdl-button mdl-button--icon mdl-js-button mdl-js-ripple-effect">
                 <i class="material-icons">share</i>
-            </button>
-        </div>
+            </button>-->
+        <!--</div>-->
 
 
 
