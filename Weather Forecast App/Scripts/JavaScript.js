@@ -30,7 +30,7 @@ function getWeather() {
                     Temperature.value = weatherObj.main.temp;
                     Temperature.display = Temperature.value + Temperature.unit;
                     Pression = weatherObj.main.pressure+" hPa";
-                    Humidite = weatherObj.main.humidity+"%"
+                    Humidite = weatherObj.main.humidity + "%";
                     document.getElementById("Icone").src = IconeURL;
                     document.getElementById("Icone").alt = MeteoTitre;
                     document.getElementById("Icone").title = MeteoTitre;
@@ -46,7 +46,7 @@ function getWeather() {
 
                 }
             });
-};
+}
 
 
 
@@ -61,11 +61,11 @@ function afficheLaDate() {
     tmptext = days[d.getDay()] + " " + d.getDate() + " " + mois[d.getMonth()] + "</BR>";
     document.getElementById("LaDate").innerHTML = tmptext;
     
-};
+}
 
 $("#unitchanger").change(function () {
     console.log("Click!");
-    if (Temperature.unit == "°C") {
+    if (Temperature.unit === "°C") {
         Temperature.value = Temperature.value * 9 / 5 + 32;
         Temperature.unit = "°F";
         $("#switch").prop('checked', false);
